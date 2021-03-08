@@ -17,8 +17,11 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
+
+
+  html, body {
     font-family: Poppins, sans-serif;
     width: 100%;
+    min-height: 100%;
   }
 `
