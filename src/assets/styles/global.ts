@@ -20,6 +20,6 @@ export default createGlobalStyle`
   html, body {
     font-family: Poppins, sans-serif;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
   }
 `
