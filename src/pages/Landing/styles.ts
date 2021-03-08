@@ -6,9 +6,8 @@ export const LandingPageContainer = styled.div`
 
 export const LandingHeader = styled.header`
 	width: 100%;
-	height: 4rem;
+	height: 5.5rem;
 	background-color: var(--color-primary);
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 `
