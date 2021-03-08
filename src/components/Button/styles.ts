@@ -6,7 +6,7 @@ export const ButtonElement = styled.button<ButtonProps>`
 	width: auto;
 	padding: 0.6rem 1rem;
 	border: none;
-	border-radius: 0.5rem;
+	border-radius: 1rem;
 	cursor: pointer;
 	font-size: 1.4rem;
 	color: var(--color-white);
