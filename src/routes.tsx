@@ -6,7 +6,9 @@ import Landing from './pages/Landing'
 const Routes: React.FC = function () {
 	return (
 		<Switch>
-			<Route path='/' children={Landing} />
+			<Route path='/'>
+				<Landing />
+			</Route>
 		</Switch>
 	)
 }
