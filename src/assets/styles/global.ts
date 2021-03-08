@@ -5,7 +5,7 @@ export default createGlobalStyle`
     font-size: 62.5%;
 
     --color-primary: #80ed99;
-    --coolor-primary-desaturate: #57cc99;
+    --color-primary-desaturate: #57cc99;
     --color-primary-dark: #38a3a5;
     --color-primary-darker: #22577a;
     --color-white: #fbfbfb;
@@ -22,6 +22,7 @@ export default createGlobalStyle`
     width: 100%;
     height: 100%;
 
+    color: var(--color-primary-darker);
     background-color: var(--color-white);
   }
 `
