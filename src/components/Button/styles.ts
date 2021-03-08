@@ -12,6 +12,9 @@ export const ButtonElement = styled.button<ButtonProps>`
 	color: var(--color-white);
 	border: 2px solid transparent;
 
+	display: flex;
+	align-items: center;
+
 	transition: 300ms;
 
 	&:hover {
@@ -31,4 +34,8 @@ export const ButtonElement = styled.button<ButtonProps>`
 			`
 		}
 	}}
+
+	svg {
+		margin-left: 0.2rem;
+	}
 `
