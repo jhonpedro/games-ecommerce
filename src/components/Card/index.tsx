@@ -4,7 +4,7 @@ import { FiShoppingCart } from 'react-icons/fi'
 import getImageFromNameGiven from '../../utils/Helpers/getImageFromNameGiven'
 import Button from '../Button'
 
-import { CardContainer } from './styles'
+import { CardContainer, Contents } from './styles'
 
 interface CardProps {
 	name: string
@@ -19,21 +19,23 @@ const Card: React.FC<CardProps> = function ({ name, price, score, image }) {
 	return (
 		<CardContainer>
 			<img src={Image} alt={`Foto do ${name}`} />
-			<strong>{name}</strong>
-			<div className='informations'>
-				<span className='price'>
-					R$ <strong>{price}</strong>
-				</span>
-				<span className='score'>
-					Pontuação: <strong>{score}</strong>
-				</span>
-			</div>
-			<div className='buttons'>
-				<Button secondary>Comprar</Button>
-				<Button secondary>
-					Adicionar ao carrinho <FiShoppingCart />{' '}
-				</Button>
-			</div>
+			<Contents>
+				<strong>{name}</strong>
+				<div className='informations'>
+					<span className='price'>
+						R$ <strong>{price}</strong>
+					</span>
+					<span className='score'>
+						Pontuação: <strong>{score}</strong>
+					</span>
+				</div>
+				<div className='buttons'>
+					<Button secondary>Comprar</Button>
+					<Button secondary>
+						Adicionar ao carrinho <FiShoppingCart />{' '}
+					</Button>
+				</div>
+			</Contents>
 		</CardContainer>
 	)
 }

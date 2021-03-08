@@ -25,6 +25,17 @@ export const CardContainer = styled.div`
 		border-radius: 0.5rem;
 	}
 
+	@media (max-width: 635px) {
+		width: 18rem;
+	}
+`
+
+export const Contents = styled.div`
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
 	> strong {
 		text-align: center;
 		font-size: 2rem;
@@ -71,9 +82,5 @@ export const CardContainer = styled.div`
 		button:first-child {
 			margin-bottom: 0.2rem;
 		}
-	}
-
-	@media (max-width: 635px) {
-		width: 18rem;
 	}
 `
