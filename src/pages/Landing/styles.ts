@@ -6,15 +6,6 @@ export const LandingPageContainer = styled.div`
 	width: 100%;
 `
 
-export const LandingHeader = styled.header`
-	width: 100%;
-	height: 5.5rem;
-	background-color: var(--color-primary);
-
-	display: flex;
-	align-items: center;
-`
-
 export const LandingContent = styled.div`
 	padding-bottom: 2rem;
 	width: 85%;
@@ -34,5 +25,27 @@ export const LandingContent = styled.div`
 
 	${CardContainer} {
 		margin-top: 1rem;
+	}
+`
+
+export const LandingSort = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+
+	font-size: 1.5rem;
+
+	span {
+		transition: 300ms;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+	}
+
+	svg {
+		transition: 300ms;
+	}
+
+	span.active svg {
+		transform: rotate(180deg);
 	}
 `
