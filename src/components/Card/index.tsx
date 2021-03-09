@@ -1,5 +1,6 @@
 import React from 'react'
-import { FiShoppingCart } from 'react-icons/fi'
+import { FiShoppingBag, FiShoppingCart } from 'react-icons/fi'
+import { useHistory } from 'react-router'
 
 import getImageFromNameGiven from '../../utils/Helpers/getImageFromNameGiven'
 import Button from '../Button'
@@ -13,8 +14,39 @@ interface CardProps {
 	image: string
 }
 
-const Card: React.FC<CardProps> = function ({ name, price, score, image }) {
+interface ProductInCart {
+	name: string
+	price: number
+	image: string
+}
+
+const CardInCart: React.FC<CardProps> = function ({
+	name,
+	price,
+	score,
+	image,
+}) {
 	const Image = getImageFromNameGiven(image)
+	const { push } = useHistory()
+
+	function handleBuy() {
+		handleAddToCart()
+		push('/cart')
+	}
+
+	function handleAddToCart() {
+		const localStorageCartItems = localStorage.getItem('cartItems') || '[]'
+		const cartItems: Array<ProductInCart> = JSON.parse(localStorageCartItems)
+
+		const alreadyHaveTheProduct = cartItems.some((item) => item.name === name)
+
+		if (alreadyHaveTheProduct) {
+			return
+		}
+
+		cartItems.push({ name, price, image })
+		localStorage.setItem('cartItems', JSON.stringify(cartItems))
+	}
 
 	return (
 		<CardContainer>
@@ -26,12 +58,14 @@ const Card: React.FC<CardProps> = function ({ name, price, score, image }) {
 						R$ <strong>{price}</strong>
 					</span>
 					<span className='score'>
-						Pontuação: <strong>{score}</strong>
+						Popularidade: <strong>{score}</strong>
 					</span>
 				</div>
 				<div className='buttons'>
-					<Button secondary>Comprar</Button>
-					<Button secondary>
+					<Button secondary onClick={handleBuy}>
+						Comprar <FiShoppingBag />{' '}
+					</Button>
+					<Button secondary onClick={handleAddToCart}>
 						Adicionar ao carrinho <FiShoppingCart />{' '}
 					</Button>
 				</div>
@@ -40,4 +74,4 @@ const Card: React.FC<CardProps> = function ({ name, price, score, image }) {
 	)
 }
 
-export default Card
+export default CardInCart

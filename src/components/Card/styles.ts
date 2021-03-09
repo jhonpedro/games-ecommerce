@@ -15,7 +15,7 @@ export const CardContainer = styled.div`
 	transition: 300ms;
 
 	:hover {
-		margin-top: -0.2rem;
+		padding-top: -0.2rem;
 		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
 	}
 	img {
@@ -23,10 +23,6 @@ export const CardContainer = styled.div`
 		padding: 0.5rem 0;
 		width: 100%;
 		border-radius: 0.5rem;
-	}
-
-	@media (max-width: 635px) {
-		width: 18rem;
 	}
 `
 
@@ -54,6 +50,7 @@ export const Contents = styled.div`
 
 		strong {
 			margin-left: 0.3rem;
+			font-size: 1.7rem;
 		}
 	}
 
@@ -65,13 +62,6 @@ export const Contents = styled.div`
 
 	.price {
 		font-size: 1.5rem;
-		strong {
-			font-size: 2rem;
-		}
-	}
-
-	.score strong {
-		font-size: 2rem;
 	}
 
 	.buttons {
