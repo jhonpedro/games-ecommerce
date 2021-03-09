@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/games-ecommerce/static/js/main.d9c94cc3.chunk.js",
+    "main.js.map": "/games-ecommerce/static/js/main.d9c94cc3.chunk.js.map",
+    "runtime-main.js": "/games-ecommerce/static/js/runtime-main.abdb3c17.js",
+    "runtime-main.js.map": "/games-ecommerce/static/js/runtime-main.abdb3c17.js.map",
+    "static/js/2.b9a5760a.chunk.js": "/games-ecommerce/static/js/2.b9a5760a.chunk.js",
+    "static/js/2.b9a5760a.chunk.js.map": "/games-ecommerce/static/js/2.b9a5760a.chunk.js.map",
+    "index.html": "/games-ecommerce/index.html",
+    "static/js/2.b9a5760a.chunk.js.LICENSE.txt": "/games-ecommerce/static/js/2.b9a5760a.chunk.js.LICENSE.txt",
+    "static/media/call-of-duty-infinite-warfare.83332c2a.png": "/games-ecommerce/static/media/call-of-duty-infinite-warfare.83332c2a.png",
+    "static/media/call-of-duty-wwii.9625ebaa.png": "/games-ecommerce/static/media/call-of-duty-wwii.9625ebaa.png",
+    "static/media/fifa-18.fde15021.png": "/games-ecommerce/static/media/fifa-18.fde15021.png",
+    "static/media/horizon-zero-dawn.78d27d76.png": "/games-ecommerce/static/media/horizon-zero-dawn.78d27d76.png",
+    "static/media/mortal-kombat-xl.b5fe094d.png": "/games-ecommerce/static/media/mortal-kombat-xl.b5fe094d.png",
+    "static/media/shards-of-darkness.81e9316a.png": "/games-ecommerce/static/media/shards-of-darkness.81e9316a.png",
+    "static/media/super-mario-odyssey.8bf89689.png": "/games-ecommerce/static/media/super-mario-odyssey.8bf89689.png",
+    "static/media/terra-media-sombras-de-mordor.b45356a2.png": "/games-ecommerce/static/media/terra-media-sombras-de-mordor.b45356a2.png",
+    "static/media/the-witcher-iii-wild-hunt.a6cbe2dc.png": "/games-ecommerce/static/media/the-witcher-iii-wild-hunt.a6cbe2dc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.abdb3c17.js",
+    "static/js/2.b9a5760a.chunk.js",
+    "static/js/main.d9c94cc3.chunk.js"
+  ]
+}
