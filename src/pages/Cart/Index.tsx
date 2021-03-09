@@ -59,6 +59,7 @@ const Cart: React.FC = function () {
 	}, [total, productsInCart])
 
 	function removeItemFromCart(index: number) {
+		//eslint-disable-next-line
 		const newItems = productsInCart.filter((item, indexInArr) => {
 			if (index !== indexInArr) {
 				return item
