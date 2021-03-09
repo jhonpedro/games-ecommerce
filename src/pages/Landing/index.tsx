@@ -15,7 +15,7 @@ interface ProductProps {
 }
 
 const Landing: React.FC = function () {
-	const [products, setProducts] = useState<Array<ProductProps>>(ProductsJSON)
+	const [products] = useState<Array<ProductProps>>(ProductsJSON)
 
 	const [sortByPriceOrder, setSortByPriceOrder] = useState(0)
 	const [sortByPopularityOrder, setSortByPopularityOrder] = useState(0)
