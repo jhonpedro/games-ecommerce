@@ -29,3 +29,12 @@ export const ContainerNavBar = styled.nav`
 		}
 	}
 `
+
+export const ContainerHeader = styled.header`
+	width: 100%;
+	height: 5.5rem;
+	background-color: var(--color-primary);
+
+	display: flex;
+	align-items: center;
+`
