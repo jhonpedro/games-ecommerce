@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/games-ecommerce/static/js/main.d9c94cc3.chunk.js",
-    "main.js.map": "/games-ecommerce/static/js/main.d9c94cc3.chunk.js.map",
+    "main.js": "/games-ecommerce/static/js/main.ec8c8411.chunk.js",
+    "main.js.map": "/games-ecommerce/static/js/main.ec8c8411.chunk.js.map",
     "runtime-main.js": "/games-ecommerce/static/js/runtime-main.abdb3c17.js",
     "runtime-main.js.map": "/games-ecommerce/static/js/runtime-main.abdb3c17.js.map",
     "static/js/2.b9a5760a.chunk.js": "/games-ecommerce/static/js/2.b9a5760a.chunk.js",
@@ -21,6 +21,6 @@
   "entrypoints": [
     "static/js/runtime-main.abdb3c17.js",
     "static/js/2.b9a5760a.chunk.js",
-    "static/js/main.d9c94cc3.chunk.js"
+    "static/js/main.ec8c8411.chunk.js"
   ]
 }
